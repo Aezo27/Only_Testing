@@ -4,7 +4,7 @@
 	<title>Cek Karakter Uji ISBN</title>
 </head>
 <body>
-    <h1><strong><center>CEK KARAKTER UJI ISBN</center></strong></h1>
+    <h1><strong><center>CEK KARAKTER UJI ISBN (10 DIGIT)</center></strong></h1>
 	<form action="" method="post" id="form">
         <span>
             <b>Masukkan Angka:</b><br>
@@ -16,7 +16,7 @@
         if (isset($_POST['data'])) {
             $data = $_POST['data'];
             $hasil = 0;
-            echo "<b>Input: $data</b><br>";
+            echo "<b>Input: $data","_</b><br>";
             for ($r = 0; $r <= strlen($data) - 1; $r++) {
                 $tambah = ($r+1) * $data[$r];
                 $hasil = $hasil + (($r+1) * $data[$r]);
